@@ -781,12 +781,29 @@
     },
     "shoppable_image_4KYjMP": {
       "type": "shoppable-image",
+      "blocks": {
+        "product_pin_p7RidL": {
+          "type": "product_pin",
+          "settings": {
+            "product": "pretty-in-pink",
+            "image_width": 200,
+            "product_name": "",
+            "product_handle": "",
+            "pin_x": 26,
+            "pin_y": 31
+          }
+        }
+      },
+      "block_order": [
+        "product_pin_p7RidL"
+      ],
       "settings": {
+        "image": "shopify://shop_images/HighSeasBabySet.jpg",
         "spot_modal_alignment": "bottom-right",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "heading": "Image with text",
         "heading_size": "h1",
