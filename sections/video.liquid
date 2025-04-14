@@ -16,12 +16,7 @@
 {%- endstyle -%}
 
 {%- liquid
-  if section.settings.video_url contains 'youtube'
-   assign video_url = section.settings.video_url | split: "=" | last
-  else
-   assign video_url = section.settings.video_url | split: "/" | last
-  endif
-  assign video_id = section.settings.video.id | default: video_url
+  assign video_id = section.settings.video.id | default: section.settings.video_url.id
   assign video_alt = section.settings.video.alt | default: section.settings.description
   assign alt = 'sections.video.load_video' | t: description: video_alt | escape
   assign poster = section.settings.video.preview_image | default: section.settings.cover_image
@@ -92,10 +87,9 @@
               assign loop = '&loop=1&playlist=' | append: video_id
             endif
           -%}
-          
-          {%- if section.settings.video_url contains 'youtube' -%}
+          {%- if section.settings.video_url.type == 'youtube' -%}
             <iframe
-              src="https://www.youtube.com/embed/{{ video_url }}?enablejsapi=1&autoplay=1{{ loop }}"
+              src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
               class="js-youtube"
               allow="autoplay; encrypted-media"
               allowfullscreen
@@ -103,7 +97,7 @@
             ></iframe>
           {%- else -%}
             <iframe
-              src="https://player.vimeo.com/video/{{ video_url }}?autoplay=1{{ loop }}"
+              src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{{ loop }}"
               class="js-vimeo"
               allow="autoplay; encrypted-media"
               allowfullscreen
@@ -193,8 +187,9 @@
       "content": "t:sections.video.settings.paragraph.content"
     },
     {
-      "type": "text",
+      "type": "video_url",
       "id": "video_url",
+      "accept": ["youtube", "vimeo"],
       "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
       "label": "t:sections.video.settings.video_url.label",
       "info": "t:sections.video.settings.video_url.info"
