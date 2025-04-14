@@ -1,0 +1,206 @@
+{{ 'section-animated-hero.css' | asset_url | stylesheet_tag }}
+    
+<div class="scroll-section">
+    <div class="hero" style="background-image: url('{{ section.settings.image-banner | image_url: width: 1500  }}');">
+        <div class="hero-overlay">
+          <div class="page-width">
+            <p>{{ section.settings.caption | escape }}</p>
+            <h1
+              class="image-with-text__heading inline-richtext {{ section.settings.heading_size }}"
+              id="hero-title"
+              {{ section.shopify_attributes }}
+            >
+              {{ section.settings.heading }}
+            </h1>
+          </div>
+        </div>
+    </div>
+    <div class="summary page-width">
+        <div class="content-one-container">
+            <div class="summary-content-1">
+                <h2>{{ section.settings.header-block-one }}</h2>
+                <p>{{ section.settings.text-one }}</p>
+            </div>
+            <div class="summary-image-one">
+              <div
+                class="summary-image-1"
+                {% if section.settings.height-one == 'adapt' and section.settings.image != blank %}1
+                  style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"
+                {% endif %}
+              >
+                {%- if section.settings.image-one  != blank -%}
+                    {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                    {%- capture sizes -%}
+                      (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                      (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                    {%- endcapture -%}
+                  {{
+                    section.settings.image-one 
+                    | image_url: width: 1500
+                    | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+                  }}
+                {%- else -%}
+                  {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- endif -%}
+              </div>
+            </div>
+        </div>
+        <div class="content-two-container">
+            <div class="summary-image-two">
+              <div
+                class="summary-image-2"
+                {% if section.settings.height-two == 'adapt' and section.settings.image != blank %}
+                  style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"
+                {% endif %}
+              >
+                {%- if section.settings.image-two != blank -%}
+                    {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                    {%- capture sizes -%}
+                      (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                      (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                    {%- endcapture -%}
+                  {{
+                    section.settings.image-two
+                    | image_url: width: 1500
+                    | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+                  }}
+                {%- else -%}
+                  {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- endif -%}
+              </div>
+            </div>
+            <div class="summary-content-2">
+                <h2>{{ section.settings.header-block-two }}</h2>
+                <p>{{ section.settings.text-two }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.addEventListener("scroll", function () {
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+        var lastScrollTop;
+        if (st > lastScrollTop) {
+            //scrolling down
+            // console.log('down st: ', st);
+        } else if (st < lastScrollTop) {
+            //scrolling up
+            // console.log('up st: ', st);
+        }
+        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+    }, false);
+</script>
+
+{% schema %}
+  {
+    "name": "Animated Hero",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image-banner",
+        "label": "Hero Banner"
+      },
+      {
+        "type": "image_picker",
+        "id": "image-one",
+        "label": "Block One"
+      },
+      {
+        "type": "select",
+        "id": "height-one",
+        "options": [
+          {
+            "value": "adapt",
+            "label": "t:sections.image-with-text.settings.height.options__1.label"
+          },
+          {
+            "value": "small",
+            "label": "t:sections.image-with-text.settings.height.options__2.label"
+          },
+          {
+            "value": "medium",
+            "label": "t:sections.image-with-text.settings.height.options__3.label"
+          },
+          {
+            "value": "large",
+            "label": "t:sections.image-with-text.settings.height.options__4.label"
+          }
+        ],
+        "default": "adapt",
+        "label": "t:sections.image-with-text.settings.height.label"
+      },
+      {
+        "type": "image_picker",
+        "id": "image-two",
+        "label": "Block Two"
+      },
+      {
+        "type": "select",
+        "id": "height-two",
+        "options": [
+          {
+            "value": "adapt",
+            "label": "t:sections.image-with-text.settings.height.options__1.label"
+          },
+          {
+            "value": "small",
+            "label": "t:sections.image-with-text.settings.height.options__2.label"
+          },
+          {
+            "value": "medium",
+            "label": "t:sections.image-with-text.settings.height.options__3.label"
+          },
+          {
+            "value": "large",
+            "label": "t:sections.image-with-text.settings.height.options__4.label"
+          }
+        ],
+        "default": "adapt",
+        "label": "t:sections.image-with-text.settings.height.label"
+      },
+      {
+        "type": "text",
+        "id": "caption",
+        "default": "t:sections.image-with-text.blocks.caption.settings.text.default",
+        "label": "t:sections.image-with-text.blocks.caption.settings.text.label"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "heading",
+        "default": "t:sections.image-banner.blocks.heading.settings.heading.default",
+        "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+      },
+      {
+        "type": "text",
+        "id": "header-block-one",
+        "default": "Header Block 1",
+        "label": "Header Block 1"
+      },
+      {
+        "type": "richtext",
+        "id": "text-one",
+        "default": "t:sections.image-with-text.blocks.text.settings.text.default",
+        "label": "t:sections.image-with-text.blocks.text.settings.text.label"
+      },
+      {
+        "type": "text",
+        "id": "header-block-two",
+        "default": "Header Block 2",
+        "label": "Header Block 2"
+      },
+      {
+        "type": "richtext",
+        "id": "text-two",
+        "default": "t:sections.image-with-text.blocks.text.settings.text.default",
+        "label": "t:sections.image-with-text.blocks.text.settings.text.label"
+      },
+    ],
+      "presets": [
+    {
+      "name": "Animated Hero",
+    }
+  ]
+
+  }
+{% endschema %}

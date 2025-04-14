@@ -1,0 +1,47 @@
+* {box-sizing: border-box;}
+
+.comparison-container{
+  display: flex;
+}
+.compare-content-container{
+  padding: 32px;
+}
+.img-comp-container {
+  position: relative;
+  height: 500px;
+  width: 80%;
+  overflow: hidden;
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden;
+}
+
+.img-comp-img img {
+  display:block;
+  vertical-align:middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 750px) {
+  .image-with-text__grid--reverse {
+    flex-direction: row-reverse;
+  }
+}
