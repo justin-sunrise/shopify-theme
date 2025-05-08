@@ -48,6 +48,8 @@
     <div
       {% if section.settings.full_width %}
         class="page-width"
+      {% else %}
+        class="grid--{{ section.settings.video_size }}"
       {% endif %}
     >
       {%- unless section.settings.heading == blank -%}
