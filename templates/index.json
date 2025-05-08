@@ -705,7 +705,7 @@
         "full_width": false,
         "color_scheme": "",
         "video_size": 52,
-        "video_location": "right",
+        "video_location": "center",
         "padding_top": 36,
         "padding_bottom": 36
       }
