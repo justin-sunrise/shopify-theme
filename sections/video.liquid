@@ -49,7 +49,7 @@
       {% if section.settings.full_width %}
         class="page-width"
       {% else %}
-        class="grid--{{ section.settings.video_size }}"
+        class="grid--{{ section.settings.video_size }}-col-desktop"
       {% endif %}
     >
       {%- unless section.settings.heading == blank -%}
@@ -233,19 +233,19 @@
       "id": "video_size",
       "options": [
         {
-          "value": "100",
+          "value": "6",
           "label": "Full"
         },
         {
-          "value": "50",
+          "value": "3",
           "label": "Half"
         },
         {
-          "value": "33",
+          "value": "1",
           "label": "Third"
         }
       ],
-      "default": "100",
+      "default": "6",
       "label": "Video Width"
     },
     {
