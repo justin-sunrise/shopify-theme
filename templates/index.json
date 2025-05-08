@@ -58,6 +58,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -105,6 +106,7 @@
         "heading_p9KkPp",
         "text_4Km36z"
       ],
+      "disabled": true,
       "custom_css": [
         ".rich-text.content-container {border-radius: 12px;}"
       ],
@@ -144,6 +146,7 @@
         "featured_collection_wTRpQr",
         "featured_collection_JrHWGV"
       ],
+      "disabled": true,
       "settings": {
         "title": "Collections",
         "heading_size": "h1",
@@ -196,6 +199,7 @@
         "column_FtG4Y7",
         "column_AgcfxP"
       ],
+      "disabled": true,
       "settings": {
         "title": "Multicolumn",
         "heading_size": "h1",
@@ -252,6 +256,7 @@
         "column_deDFjB",
         "column_VnkAGF"
       ],
+      "disabled": true,
       "settings": {
         "title": "Multicolumn",
         "heading_size": "h1",
@@ -323,6 +328,7 @@
         "buy_buttons_yPMVJi",
         "share_xWDtAE"
       ],
+      "disabled": true,
       "settings": {
         "product": "",
         "color_scheme": "",
@@ -371,6 +377,7 @@
         "text_Qq8G78",
         "button_PzgywJ"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -411,6 +418,7 @@
         "text_A9LXHm",
         "button_UE7YmC"
       ],
+      "disabled": true,
       "custom_css": [
         ".image-with-text {border-radius: 12px;}"
       ],
@@ -471,6 +479,7 @@
         "slide_ixPedi",
         "slide_kDUJqx"
       ],
+      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "large",
@@ -509,6 +518,7 @@
         "image_KNtTzd",
         "product_FpXpiB"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -559,6 +569,7 @@
         "row_yCwJNW",
         "row_rGBReM"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
@@ -621,6 +632,7 @@
         "collapsible_row_ahXBbF",
         "collapsible_row_8Jtyfk"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Collapsible content",
@@ -662,6 +674,7 @@
         "paragraph_MwL7dU",
         "email_form_kfEWbt"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "full_width": true,
@@ -671,6 +684,7 @@
     },
     "contact_form_RBFrBD": {
       "type": "contact-form",
+      "disabled": true,
       "settings": {
         "heading": "Contact form",
         "heading_size": "h1",
@@ -690,7 +704,7 @@
         "description": "",
         "full_width": false,
         "color_scheme": "",
-        "video_size": "2",
+        "video_size": 52,
         "padding_top": 36,
         "padding_bottom": 36
       }
