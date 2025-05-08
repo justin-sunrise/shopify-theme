@@ -46,3 +46,16 @@
 .video-section__media.media-fit-cover video {
   object-fit: cover;
 }
+
+.video-placement-left{
+  justify-content: start;
+}
+.video-placement-center{
+  justify-content: middle;
+}
+.video-placement-right{
+  justify-content: end;
+}
+.video-block-flex{
+  display:flex;
+}
