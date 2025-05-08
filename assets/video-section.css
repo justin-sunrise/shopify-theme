@@ -53,7 +53,7 @@
 }
 .video-placement-center{
   display:flex;
-  justify-content: middle;
+  justify-content: center;
 }
 .video-placement-right{
   display:flex;
