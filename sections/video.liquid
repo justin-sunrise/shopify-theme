@@ -57,6 +57,7 @@
         </div>
       {%- endunless -%}
     </div>
+    {%- if poster != null -%}
     <deferred-media
       class="video-section__media deferred-media gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       data-media-id="{{ video_id }}"
@@ -124,6 +125,8 @@
         {%- endif -%}
       </template>
     </deferred-media>
+    {%- else -%}
+    {%- endif -%}
   </div>
   </div>
 </div>
