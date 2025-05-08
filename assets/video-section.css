@@ -48,12 +48,15 @@
 }
 
 .video-placement-left{
+  display:flex;
   justify-content: start;
 }
 .video-placement-center{
+  display:flex;
   justify-content: middle;
 }
 .video-placement-right{
+  display:flex;
   justify-content: end;
 }
 .video-block-flex{
