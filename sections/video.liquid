@@ -97,7 +97,7 @@
           
           {%- if section.settings.video_url contains 'youtube' -%}
             <iframe
-              src="https://www.youtube.com/embed/{{ video_url }}?enablejsapi=1&autoplay=1{{ loop }}"
+              src="https://www.youtube.com/embed/{{ video_url }}?enablejsapi=1"
               class="js-youtube"
               allow="autoplay; encrypted-media"
               allowfullscreen
@@ -105,7 +105,7 @@
             ></iframe>
           {%- else -%}
             <iframe
-              src="https://player.vimeo.com/video/{{ video_url }}?autoplay=1{{ loop }}"
+              src="https://player.vimeo.com/video/{{ video_url }}"
               class="js-vimeo"
               allow="autoplay; encrypted-media"
               allowfullscreen
@@ -127,34 +127,31 @@
     </deferred-media>
     {%- else -%}
       {%- if section.settings.video == null and section.settings.video_url != blank -%}
-        {%- liquid
-          assign loop = ''
-          if section.settings.enable_video_looping
-            assign loop = '&loop=1&playlist=' | append: video_id
-          endif
-          assign aspect_ratio = settings.page_width | times: 0.56
-          assign box_width = aspect_ratio | times: section.settings.video_size
-          assign container_height = box_width | divided_by: 100
-        -%}
-        {%- if section.settings.video_url contains 'youtube' -%}
-          <iframe
-            src="https://www.youtube.com/embed/{{ video_url }}?enablejsapi=1&autoplay=1{{ loop }}"
-            class="js-youtube"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-            height="{{ container_height }}"
-            title="{{ section.settings.description | escape }}"
-          ></iframe>
-        {%- else -%}
-          <iframe
-            src="https://player.vimeo.com/video/{{ video_url }}?autoplay=1{{ loop }}"
-            class="js-vimeo"
-            allow="autoplay; encrypted-media"
-            height="{{ container_height }}"
-            allowfullscreen
-            title="{{ section.settings.description | escape }}"
-          ></iframe>
-        {%- endif -%}
+        <div class="video-frame-container">
+          {%- liquid
+            assign loop = ''
+            if section.settings.enable_video_looping
+              assign loop = '&loop=1&playlist=' | append: video_id
+            endif
+          -%}
+          {%- if section.settings.video_url contains 'youtube' -%}
+            <iframe
+              src="https://www.youtube.com/embed/{{ video_url }}?enablejsapi=1"
+              class="js-youtube embed-video-frame"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              title="{{ section.settings.description | escape }}"
+            ></iframe>
+          {%- else -%}
+            <iframe
+              src="https://player.vimeo.com/video/{{ video_url }}"
+              class="js-vimeo embed-video-frame"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              title="{{ section.settings.description | escape }}"
+            ></iframe>
+          {%- endif -%}
+        </div>
       {%- else -%}
         {{
           section.settings.video
