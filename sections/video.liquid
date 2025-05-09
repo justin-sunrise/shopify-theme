@@ -132,6 +132,9 @@
           if section.settings.enable_video_looping
             assign loop = '&loop=1&playlist=' | append: video_id
           endif
+          assign aspect_ratio = settings.page_width | times: 0.56
+          assign box_width = section.settings.video_size | divided_by: 100
+          assign container_height = aspect_ratio | times: box_width
         -%}
         
         {%- if section.settings.video_url contains 'youtube' -%}
@@ -140,6 +143,7 @@
             class="js-youtube"
             allow="autoplay; encrypted-media"
             allowfullscreen
+            height={{ container_height }}
             title="{{ section.settings.description | escape }}"
           ></iframe>
         {%- else -%}
