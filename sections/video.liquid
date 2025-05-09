@@ -136,7 +136,7 @@
           assign box_width = section.settings.video_size | divided_by: 100
           assign container_height = aspect_ratio | times: box_width
         -%}
-        
+        <p>{{ container_height }}</p>
         {%- if section.settings.video_url contains 'youtube' -%}
           <iframe
             src="https://www.youtube.com/embed/{{ video_url }}?enablejsapi=1&autoplay=1{{ loop }}"
