@@ -87,7 +87,7 @@
         </span>
       </button>
       <template>
-        {%- if section.settings.video == null and section.settings.video_url != null -%}
+        {%- if section.settings.video == null and section.settings.video_url != blank -%}
           {%- liquid
             assign loop = ''
             if section.settings.enable_video_looping
@@ -126,7 +126,7 @@
       </template>
     </deferred-media>
     {%- else -%}
-      {%- if section.settings.video == null and section.settings.video_url != null -%}
+      {%- if section.settings.video == null and section.settings.video_url != blank -%}
         {%- liquid
           assign loop = ''
           if section.settings.enable_video_looping
