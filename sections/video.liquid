@@ -151,6 +151,7 @@
             src="https://player.vimeo.com/video/{{ video_url }}?autoplay=1{{ loop }}"
             class="js-vimeo"
             allow="autoplay; encrypted-media"
+            height="{{ container_height }}"
             allowfullscreen
             title="{{ section.settings.description | escape }}"
           ></iframe>
