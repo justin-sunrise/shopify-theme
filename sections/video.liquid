@@ -133,8 +133,8 @@
             assign loop = '&loop=1&playlist=' | append: video_id
           endif
           assign aspect_ratio = settings.page_width | times: 0.56
-          assign box_width = section.settings.video_size | divided_by: 100
-          assign container_height = aspect_ratio | times: box_width
+          assign box_width = aspect_ratio | times: section.settings.video_size
+          assign container_height = box_width | divided_by: 100
         -%}
         <p>{{ aspect_ratio }}-{{ box_width }}-{{ container_height }}</p>
         {%- if section.settings.video_url contains 'youtube' -%}
