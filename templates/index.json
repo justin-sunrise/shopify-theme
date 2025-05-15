@@ -46,31 +46,32 @@
       "settings": {
         "image_overlay_opacity": 0,
         "image_height": "small",
-        "image_behavior": "zoom-in",
         "desktop_content_position": "middle-left",
-        "desktop_content_alignment": "left",
         "show_text_box": false,
+        "desktop_content_alignment": "left",
         "color_scheme": "scheme-5",
-        "stack_images_on_mobile": false,
+        "image_behavior": "zoom-in",
         "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
-        "collection": "all",
-        "products_to_show": 8,
         "title": "Featured products",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
         "columns_desktop": 4,
-        "enable_desktop_slider": true,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
+        "enable_desktop_slider": true,
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -105,6 +106,7 @@
         "heading_p9KkPp",
         "text_4Km36z"
       ],
+      "disabled": true,
       "custom_css": [
         ".rich-text.content-container {border-radius: 12px;}"
       ],
@@ -144,6 +146,7 @@
         "featured_collection_wTRpQr",
         "featured_collection_JrHWGV"
       ],
+      "disabled": true,
       "settings": {
         "title": "Collections",
         "heading_size": "h1",
@@ -196,16 +199,17 @@
         "column_FtG4Y7",
         "column_AgcfxP"
       ],
+      "disabled": true,
       "settings": {
         "title": "Multicolumn",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "button_label": "Button label",
-        "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -252,16 +256,17 @@
         "column_deDFjB",
         "column_VnkAGF"
       ],
+      "disabled": true,
       "settings": {
         "title": "Multicolumn",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "square",
-        "button_label": "Button label",
-        "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
+        "button_label": "Button label",
+        "button_link": "",
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -323,6 +328,7 @@
         "buy_buttons_yPMVJi",
         "share_xWDtAE"
       ],
+      "disabled": true,
       "settings": {
         "product": "",
         "color_scheme": "",
@@ -371,6 +377,7 @@
         "text_Qq8G78",
         "button_PzgywJ"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -411,6 +418,7 @@
         "text_A9LXHm",
         "button_UE7YmC"
       ],
+      "disabled": true,
       "custom_css": [
         ".image-with-text {border-radius: 12px;}"
       ],
@@ -418,13 +426,13 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
-        "image_behavior": "zoom-in",
-        "content_layout": "no-overlap",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
+        "content_layout": "no-overlap",
         "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-5",
+        "image_behavior": "zoom-in",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -435,35 +443,35 @@
         "slide_ixPedi": {
           "type": "slide",
           "settings": {
-            "image_overlay_opacity": 0,
             "heading": "Image slide",
             "heading_size": "hxl",
             "subheading": "Tell your brand's story through images",
             "button_label": "Button label",
             "link": "shopify://pages/history-of-spaghetti",
             "button_style_secondary": false,
-            "show_text_box": true,
             "box_align": "middle-left",
+            "show_text_box": true,
             "text_alignment": "left",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-3"
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
           }
         },
         "slide_kDUJqx": {
           "type": "slide",
           "settings": {
-            "image_overlay_opacity": 0,
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
             "button_label": "Button label",
             "link": "",
             "button_style_secondary": false,
-            "show_text_box": true,
             "box_align": "middle-center",
+            "show_text_box": true,
             "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
           }
         }
       },
@@ -471,6 +479,7 @@
         "slide_ixPedi",
         "slide_kDUJqx"
       ],
+      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "large",
@@ -509,6 +518,7 @@
         "image_KNtTzd",
         "product_FpXpiB"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -559,18 +569,19 @@
         "row_yCwJNW",
         "row_rGBReM"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
-        "image_layout": "alternate-left",
         "heading_size": "h1",
         "text_style": "body",
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
+        "image_layout": "alternate-left",
         "section_color_scheme": "scheme-5",
         "row_color_scheme": "scheme-1",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -621,14 +632,15 @@
         "collapsible_row_ahXBbF",
         "collapsible_row_8Jtyfk"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Collapsible content",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
-        "container_color_scheme": "",
         "color_scheme": "",
+        "container_color_scheme": "",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
@@ -662,6 +674,7 @@
         "paragraph_MwL7dU",
         "email_form_kfEWbt"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "full_width": true,
@@ -671,6 +684,7 @@
     },
     "contact_form_RBFrBD": {
       "type": "contact-form",
+      "disabled": true,
       "settings": {
         "heading": "Contact form",
         "heading_size": "h1",
@@ -685,11 +699,12 @@
         "heading": "Video",
         "heading_size": "h1",
         "enable_video_looping": true,
-        "video_url": "https://player.vimeo.com/video/1043674568",
-        "cover_image": "shopify://shop_images/pexels-lastly-808465.jpg",
+        "video_url": "https://www.youtube.com/watch?v=-mjA4W6Cwpk",
         "description": "",
         "full_width": false,
         "color_scheme": "",
+        "video_size": 76,
+        "video_location": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -697,16 +712,16 @@
     "featured_blog_EMcPf3": {
       "type": "featured-blog",
       "settings": {
-        "blog": "news",
-        "post_limit": 3,
         "heading": "Blog posts",
         "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
         "columns_desktop": 3,
-        "show_view_all": true,
+        "color_scheme": "",
         "show_image": true,
         "show_date": true,
         "show_author": true,
-        "color_scheme": "",
+        "show_view_all": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -756,60 +771,72 @@
         "height": "large",
         "desktop_image_width": "large",
         "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
+        "content_layout": "no-overlap",
         "section_color_scheme": "",
         "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "image_comparison_DPLLjc": {
-      "type": "image-comparison",
-      "settings": {
-        "heading": "Multimedia collage",
-        "image_left": "shopify://shop_images/snowboard-2.jpg",
-        "image_right": "shopify://shop_images/snowboard-hero.jpg",
-        "layout": "image_first",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "shoppable_image_4KYjMP": {
+    "shoppable_image_9axaKG": {
       "type": "shoppable-image",
       "blocks": {
-        "product_pin_p7RidL": {
+        "product_pin_h4pJyD": {
           "type": "product_pin",
           "settings": {
-            "product": "pretty-in-pink",
+            "product": "",
             "image_width": 200,
             "product_name": "",
             "product_handle": "",
-            "pin_x": 26,
-            "pin_y": 31
+            "pin_x": 50,
+            "pin_y": 50
+          }
+        },
+        "product_pin_eMbzpG": {
+          "type": "product_pin",
+          "settings": {
+            "product": "",
+            "image_width": 200,
+            "product_name": "",
+            "product_handle": "",
+            "pin_x": 50,
+            "pin_y": 50
+          }
+        },
+        "product_pin_cmeLff": {
+          "type": "product_pin",
+          "settings": {
+            "product": "",
+            "image_width": 200,
+            "product_name": "",
+            "product_handle": "",
+            "pin_x": 50,
+            "pin_y": 50
           }
         }
       },
       "block_order": [
-        "product_pin_p7RidL"
+        "product_pin_h4pJyD",
+        "product_pin_eMbzpG",
+        "product_pin_cmeLff"
       ],
       "settings": {
-        "image": "shopify://shop_images/HighSeasBabySet.jpg",
+        "image": "shopify://shop_images/snowboard-hero.jpg",
         "spot_modal_alignment": "bottom-right",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "middle",
+        "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "heading": "Image with text",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
         "text_style": "body",
-        "link_label": "",
+        "link_label": "Button Link",
         "link": "",
         "section_color_scheme": "",
         "color_scheme": "",
@@ -817,6 +844,77 @@
         "meta_field": "Button label",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_comparison_XnCk9T": {
+      "type": "image-comparison",
+      "settings": {
+        "heading": "Multimedia collage",
+        "image_left": "shopify://shop_images/pexels-lastly-808465.jpg",
+        "image_right": "shopify://shop_images/3049489_SAL_Notch_BikeInAction-Carousel_1_vF.jpg",
+        "layout": "text_first",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "how_it_works_nijtAy": {
+      "type": "how-it-works",
+      "blocks": {
+        "step_FTqYGE": {
+          "type": "step",
+          "settings": {
+            "image_placement": "last",
+            "title": "Column",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": "",
+            "button_style_secondary": false
+          }
+        },
+        "step_8Jy4mw": {
+          "type": "step",
+          "settings": {
+            "image_placement": "last",
+            "title": "Column",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": "",
+            "button_style_secondary": false
+          }
+        },
+        "step_tK83EB": {
+          "type": "step",
+          "settings": {
+            "image_placement": "last",
+            "title": "Column",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "step_FTqYGE",
+        "step_8Jy4mw",
+        "step_tK83EB"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "support_text": "Multicolumn",
+        "color_scheme": "scheme-4",
+        "color_scheme_2": "scheme-2",
+        "color_scheme_3": "",
+        "text_alignment": "left",
+        "show_step": true,
+        "show_inline": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -842,7 +940,8 @@
     "featured_blog_EMcPf3",
     "page_ffVG3W",
     "image_with_text_ycmFRh",
-    "image_comparison_DPLLjc",
-    "shoppable_image_4KYjMP"
+    "shoppable_image_9axaKG",
+    "image_comparison_XnCk9T",
+    "how_it_works_nijtAy"
   ]
 }
