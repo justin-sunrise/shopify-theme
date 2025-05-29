@@ -45,7 +45,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/pexels-lastly-808465.jpg",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 50,
         "image_height": "small",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
