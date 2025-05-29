@@ -704,7 +704,7 @@
         "description": "",
         "full_width": false,
         "color_scheme": "",
-        "video_size": 76,
+        "video_size": 72,
         "video_location": "left",
         "padding_top": 36,
         "padding_bottom": 36
@@ -784,27 +784,27 @@
           "settings": {
             "product": "high-seas-baby-set",
             "image_width": 200,
-            "product_name": "",
+            "product_name": "High Sea Baby",
             "product_handle": "",
-            "pin_x": 50,
-            "pin_y": 50
+            "pin_x": 71,
+            "pin_y": 36
           }
         },
         "product_pin_eMbzpG": {
           "type": "product_pin",
           "settings": {
-            "product": "",
+            "product": "replacement-part",
             "image_width": 200,
             "product_name": "",
             "product_handle": "",
-            "pin_x": 50,
-            "pin_y": 50
+            "pin_x": 24,
+            "pin_y": 73
           }
         },
         "product_pin_cmeLff": {
           "type": "product_pin",
           "settings": {
-            "product": "",
+            "product": "pretty-in-pink",
             "image_width": 200,
             "product_name": "",
             "product_handle": "",
