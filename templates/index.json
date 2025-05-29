@@ -44,6 +44,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify://shop_images/pexels-lastly-808465.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "desktop_content_position": "middle-left",
@@ -760,6 +761,7 @@
         "button_bRfpcM"
       ],
       "settings": {
+        "image": "shopify://shop_images/snowboard-2.jpg",
         "height": "large",
         "desktop_image_width": "large",
         "layout": "image_first",
