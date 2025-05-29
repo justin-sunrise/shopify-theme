@@ -98,10 +98,10 @@ function initComparisons() {
   <div class="comparison-container{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
     <div class="img-comp-container">
       <div class="img-comp-img">
-        <img src="{{ section.settings.image_left | image_url: width: 1500 }}" width="1000px" height="auto">
+        <img src="{{ section.settings.image_left | image_url: width: 1500 }}" width="1000px" height="auto" alt="{{ section.settings.image_left.alt }}">
       </div>
       <div class="img-comp-img img-comp-overlay">
-        <img src="{{ section.settings.image_right | image_url: width: 1500 }}" width="1000px" height="auto">
+        <img src="{{ section.settings.image_right | image_url: width: 1500 }}" width="1000px" height="auto" alt="{{ section.settings.image_right.alt }}">
       </div>
     </div>
     <div class="compare-content-container">
