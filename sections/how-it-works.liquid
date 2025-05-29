@@ -17,7 +17,7 @@
 
 <div class="gradient color-{{ section.settings.color_scheme }}">
   <div class="hiw-column-container">
-    <div class="hiw-column-left section-{{ section.id }}-padding" style="background-image:url('{{ section.settings.image | image_url: width: 1500 }}');">
+    <div class="hiw-column-left section-{{ section.id }}-padding" {% if section.settings.image != blank %}style="background-image:url('{{ section.settings.image | image_url: width: 1500 }}');"{% endif %}>
       <h2 class="title inline-richtext {{ section.settings.heading_size }}">
           {{ section.settings.title }}
         </h2>
