@@ -140,8 +140,8 @@
                        }
                       }
                       {%- endstyle -%}
-                      <div class="single-spot single-spot-position-{{ forloop.index }}" role="button" title="View {{ pin.settings.product.title }}">
-                        <button class="single-spot-svg rotate-spot-0" onclick="addClassToSibling(this)">
+                      <div class="single-spot single-spot-position-{{ forloop.index }}" role="button" >
+                        <button class="single-spot-svg rotate-spot-0" onclick="addClassToSibling(this)" aria-label="View Feature" title="View {{ pin.settings.product.title }}">
                           <svg class="" data-target="spot-modal-{{ section.id }}-{{ forloop.index }}" xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2263 9.29144V0.418396H9.4665V9.29144H0.592476V12.0512H9.4665V20.9262H12.2263V12.0512H21.1003V9.29144H12.2263Z" fill="white"/>
                           </svg>
