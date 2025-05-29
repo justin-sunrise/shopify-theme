@@ -56,6 +56,60 @@
         "show_text_below": false
       }
     },
+    "slideshow_LUf4Wd": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_f78rLd": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_Tw8LXc": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_f78rLd",
+        "slide_Tw8LXc"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "disabled": true,
@@ -721,7 +775,9 @@
         "show_image": true,
         "show_date": true,
         "show_author": true,
+        "show_excerpt": false,
         "show_view_all": true,
+        "filter": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -922,6 +978,7 @@
   },
   "order": [
     "image_banner",
+    "slideshow_LUf4Wd",
     "featured_collection",
     "rich_text_pYqCwW",
     "collection_list_aLWPC7",
